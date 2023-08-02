@@ -6,11 +6,18 @@
     font-family: 'Poppins', sans-serif;
 }
 nav{
-    background-color: #f9e0e3;
-    padding: 10px 60px;
+    background-color: pink;
+    padding: 0px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 nav .logo a{
     text-decoration: none;
@@ -41,8 +48,8 @@ nav li a:hover{
     color: black;
 }
 .banner{
-    height: 100vh;
-    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('WhatsApp\ Image\ 2023-08-02\ at\ 12.08.30\ \(1\).jpeg');
+    min-height: 100vh;
+    background: linear-gradient( rgba(0,0,0,0.281), rgba(0,0,0,0.308)),url('imagens/WhatsApp\ Image\ 2023-08-02\ at\ 12.08.30\ \(1\).jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,6 +58,9 @@ nav li a:hover{
     justify-content: center;
     text-align: center;
 }
+.texto {
+    padding: 100px;
+}
 .texto .titulo{
     color: #fff;
     font-size: 60px;
@@ -58,7 +68,7 @@ nav li a:hover{
 }
 .texto .sub_titulo{
     color: #fff;
-    font-size: 58px;
+    font-size: 20px;
     font-weight: 600;
 }
 .texto .botoes{
@@ -103,4 +113,37 @@ nav li a:hover{
     100%{
         transform: scale(1);
     }
+}
+
+.rodape {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    color: white;
+}
+
+.rodape .icones {
+    display: flex;
+    gap: 15px;
+}
+
+.fotos {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.imagem {
+    width: 200px;
+    height: 200px;
+}
+
+.imagem img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
